@@ -1,0 +1,56 @@
+enforce_secure_profile: false
+listeners:
+- query_port: 25577
+  motd: '&bTesting Network &6(&emain&6)'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    pvp.md-5.net: fallback
+  ping_passthrough: false
+  priorities:
+  - fallback
+  bind_local_address: true
+  host: 0.0.0.0:90
+  max_players: 999
+  tab_size: 60
+  force_default_server: true
+remote_ping_cache: -1
+network_compression_threshold: 256
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+  - bungeecord.command.kick
+log_pings: true
+connection_throttle_limit: 3
+server_connect_timeout: 5000
+timeout: 30000
+player_limit: -1
+prevent_proxy_connections: false
+ip_forward: true
+groups:
+  md_5:
+  - admin
+remote_ping_timeout: 5000
+connection_throttle: 100
+log_commands: true
+stats: 465cd9fc-ff9a-4e83-8448-c95f72870ea2
+online_mode: true
+forge_support: true
+disabled_commands:
+- disabledcommandhere
+servers:
+  fallback:
+    motd: '&bTesting Network &6(&efallback&6)'
+    address: localhost:91
+    restricted: false
+  generic-testing:
+    motd: '&bTesting Network &6(&egeneric-testing&6)'
+    address: localhost:92
+    restricted: false
